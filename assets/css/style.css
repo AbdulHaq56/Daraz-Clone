@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-font: "Roboto", "Helvetica Neue", "Noto Sans", Helvetica, Tahoma,
+    Arial, Sans-serif;
+  --body-font: "Noto Sans", "Helvetica Neue", Helvetica, Tahoma, Arial,
+    Sans-serif;
+  --theme-color: #f85606;
+  --body-theme-color: #f57224;
+  color: #fff;
+}
+
+header {
+  height: 123px;
+  font-family: var(--header-font);
+  background-color: var(--theme-color);
+}
+
+.topBar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topBar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+.topBar ul li {
+  transition: color 0.2s;
+  text-transform: uppercase;
+  font-size: small;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.topBar ul li:hover {
+  color: #fac8c8;
+}
+/*  */
+
+nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  gap: 70px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+#Search {
+  border-radius: 2px;
+  padding-left: 20px;
+  border: none;
+  width: 650px;
+  height: 46px;
+}
+
+input::placeholder {
+  color: rgb(163, 163, 163);
+  font-size: 14px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: none;
+}
+
+.sIcon {
+  background-color: #ffe1d2;
+  height: 46px;
+  width: 50px;
+  position: relative;
+  right: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.sIcon:hover {
+  cursor: pointer;
+}
+.ri-search-line {
+  color: var(--theme-color);
+  font-size: 22px;
+}
+.cartDiv {
+  position: relative;
+  right: 105px;
+}
+.cartDiv:hover {
+  cursor: pointer;
+}
+.ri-shopping-cart-line {
+  font-size: 27px;
+}
+
+section {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+section:hover {
+  cursor: pointer;
+}
+main,
+footer {
+  background-color: #ecebeb81;
+  height: 100%;
+  width: 100%;
+  font-family: var(--body-font);
+}
+.flashSaleDiv,
+.categoriesDiv,
+.just4uDiv,
+.loadMoreDiv,
+.footerTop,
+.LogoTop,
+.footerBtmDiv,
+.thirdFooter,
+.logobtm {
+  width: 87.5%;
+  margin: auto;
+}
+.div1 h2 {
+  padding-top: 35px;
+  padding-bottom: 8px;
+  color: #424242;
+  font-weight: 500;
+  font-size: 24px;
+}
+.div2 {
+  background-color: #fff;
+  height: 60px;
+  color: var(--body-theme-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.div2 h3 {
+  font-size: small;
+}
+.div2 button {
+  color: var(--body-theme-color);
+  background-color: transparent;
+  border: var(--body-theme-color) 1px solid;
+  text-transform: uppercase;
+  height: 35px;
+  width: 190px;
+  font-weight: 600;
+  font-size: medium;
+}
+.div2 button:focus {
+  border: var(--body-theme-color) 1px solid;
+}
+.div2 button:hover {
+  cursor: pointer;
+}
+.div3 {
+  margin-top: 1.2px;
+  height: 305px;
+  background-color: #fff;
+}
+.pDiv {
+  display: flex;
+  gap: 11.5px;
+  justify-content: space-between;
+  padding-top: 9px;
+}
+.prdct {
+  height: 275px;
+  transition: box-shadow 0.3s ease;
+}
+.prdct:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.pTitle {
+  color: #000000;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+.price {
+  color: var(--body-theme-color);
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+.discDiv {
+  display: flex;
+  padding-left: 5px;
+}
+.discDiv .cutPrice {
+  color: #9e9e9e;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.discDiv p {
+  color: #212121;
+  font-size: 12px;
+}
+/*  */
+.secondDiv {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.4px;
+}
+.productDivv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 145px;
+  width: 145px;
+  background-color: #fff;
+}
+.productDivv,
+.fyDiv:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+.productDivv p {
+  padding-top: 4px;
+  text-align: center;
+}
+.przDiv {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.przDiv p {
+  font-size: 12px;
+  color: #212121;
+}
+.star {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+}
+.star p {
+  font-size: 12px;
+}
+.scndMain {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 23px 7px;
+}
+
+.loadMoreDiv {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadMoreDiv button {
+  color: #1a9cb8;
+  border: 1.5px solid #1a9cb8;
+  height: 40px;
+  width: 387px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footerTop {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.divf1,
+.divf2 {
+  display: flex;
+  flex-direction: column;
+}
+.fH3 {
+  color: #0f136d;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.divf1 a,
+.divf2 a {
+  font-size: 12px;
+  color: #0f136d;
+}
+
+.divf1 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.divf2 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footerLogoDiv,
+.btmLogoDiv {
+  width: 100%;
+  height: 170px;
+  background: white;
+}
+.fLogoP {
+  font-size: 16px;
+  color: #183544;
+  padding: 25px 0;
+}
+.LogoTop {
+  display: flex;
+  gap: 80px;
+}
+
+.thrdFooter {
+  height: 100%;
+  padding: 70px 0 40px 0;
+  justify-items: center;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.thrdFooter p {
+  font-size: 11px;
+  color: #888888;
+  display: block;
+  line-height: calc(1em + 2px);
+  cursor: text;
+}
+
+.thrdFooter h3 {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #606060;
+}
+
+.textClm1 {
+  height: inherit;
+  width: 260px;
+}
+.textClm2 {
+  height: inherit;
+  width: 260px;
+}
+.textClm3 {
+  height: inherit;
+  width: 260px;
+}
+.textClm4 {
+  height: inherit;
+  width: 260px;
+}
+
+#bold {
+  padding-top: 12px;
+  font-weight: bold;
+  color: #888888;
+}
+
+#title {
+  font-size: 16px;
+  padding: 11px 0 2px 0;
+  color: #606060;
+}
+.logobtm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logobtm div {
+  margin-top: 45px;
+}
+.btmLogoDiv {
+  height: 150px;
+}
